@@ -1,0 +1,28 @@
+name: ACCESS Backend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+        - 5432:5432
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-java@v3
+      with:
+        distribution: zulu
+        java-version: 17
+    - name: Create Docker Image
+      uses: gradle/gradle-build-action@v2.1.4
+      with:
+        arguments: bootBuildImage -Pusername=${{ secrets.DOCKERHUB_USERNAME }} -Ppassword=${{ secrets.DOCKERHUB_PASSWORD }}
+        cache-disabled: true

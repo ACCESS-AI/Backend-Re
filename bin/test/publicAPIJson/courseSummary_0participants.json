@@ -1,0 +1,174 @@
+{
+  "assignments" : [ {
+    "tasks" : [ {
+      "slug" : "hello-world",
+      "information" : {
+        "en" : {
+          "title" : "Hello, World!",
+          "language" : "en",
+          "instructionsFile" : "instructions_en.md"
+        }
+      },
+      "dockerImage" : "python:latest",
+      "runCommand" : "python task/script.py",
+      "testCommand" : "python -m unittest discover -v task",
+      "gradeCommand" : "python -m grading.tests",
+      "maxPoints" : 1.0,
+      "timeLimit" : 30,
+      "maxAttempts" : 2,
+      "ordinalNum" : 1,
+      "attemptRefill" : 86400
+    } ],
+    "slug" : "hello",
+    "information" : {
+      "en" : {
+        "title" : "Hello, World!",
+        "language" : "en"
+      }
+    },
+    "end" : "2020-01-12T13:00:00",
+    "maxPoints" : 1.0,
+    "start" : "2020-01-01T13:00:00",
+    "ordinalNum" : 1
+  }, {
+    "tasks" : [ {
+      "slug" : "variable-assignment",
+      "information" : {
+        "en" : {
+          "title" : "Variable assignment",
+          "language" : "en",
+          "instructionsFile" : "instructions_en.md"
+        }
+      },
+      "dockerImage" : "python:latest",
+      "runCommand" : "python task/script.py",
+      "testCommand" : "python -m unittest discover -v task",
+      "gradeCommand" : "python -m grading.tests",
+      "maxPoints" : 2.0,
+      "timeLimit" : 30,
+      "maxAttempts" : 3,
+      "ordinalNum" : 1,
+      "attemptRefill" : 86400
+    }, {
+      "slug" : "friendly-pairs",
+      "information" : {
+        "en" : {
+          "title" : "Identifying friendly pairs",
+          "language" : "en",
+          "instructionsFile" : "instructions_en.md"
+        }
+      },
+      "dockerImage" : "python:latest",
+      "runCommand" : "python task/script.py",
+      "testCommand" : "python -m unittest discover -v task",
+      "gradeCommand" : "python -m grading.tests",
+      "maxPoints" : 2.0,
+      "timeLimit" : 30,
+      "maxAttempts" : 2,
+      "ordinalNum" : 2,
+      "attemptRefill" : 64800
+    }, {
+      "slug" : "arithmetic-expression",
+      "information" : {
+        "en" : {
+          "title" : "Arithmetic expression",
+          "language" : "en",
+          "instructionsFile" : "instructions_en.md"
+        }
+      },
+      "dockerImage" : "python:latest",
+      "runCommand" : "python task/script.py",
+      "testCommand" : "python -m unittest discover -v task",
+      "gradeCommand" : "python -m grading.tests",
+      "maxPoints" : 1.0,
+      "timeLimit" : 30,
+      "maxAttempts" : 2,
+      "ordinalNum" : 3,
+      "attemptRefill" : 86400
+    }, {
+      "slug" : "presistent-results",
+      "information" : {
+        "en" : {
+          "title" : "Persistent Results",
+          "language" : "en",
+          "instructionsFile" : "instructions_en.md"
+        }
+      },
+      "dockerImage" : "python:latest",
+      "runCommand" : "python task/script.py",
+      "testCommand" : "python -m unittest discover -v task",
+      "gradeCommand" : "python -m grading.tests",
+      "maxPoints" : 1.0,
+      "timeLimit" : 30,
+      "maxAttempts" : 2,
+      "ordinalNum" : 4,
+      "attemptRefill" : 86400
+    } ],
+    "slug" : "basics",
+    "information" : {
+      "en" : {
+        "title" : "Basics",
+        "language" : "en"
+      }
+    },
+    "end" : "2028-01-01T13:00:00",
+    "maxPoints" : 6.0,
+    "start" : "2023-01-01T13:00:00",
+    "ordinalNum" : 2
+  }, {
+    "tasks" : [ {
+      "slug" : "carpark-multiple-inheritance",
+      "information" : {
+        "en" : {
+          "title" : "Car Types",
+          "language" : "en",
+          "instructionsFile" : "instructions_en.md"
+        }
+      },
+      "dockerImage" : "python:latest",
+      "runCommand" : "python -m task.script",
+      "testCommand" : "python -m unittest discover -v task",
+      "gradeCommand" : "python -m grading.tests",
+      "maxPoints" : 4.0,
+      "timeLimit" : 30,
+      "maxAttempts" : 5,
+      "ordinalNum" : 1,
+      "attemptRefill" : 43200
+    } ],
+    "slug" : "classes",
+    "information" : {
+      "en" : {
+        "title" : "Classes",
+        "language" : "en"
+      }
+    },
+    "end" : "2028-01-13T13:00:00",
+    "maxPoints" : 4.0,
+    "start" : "2028-01-01T13:00:00",
+    "ordinalNum" : 3
+  } ],
+  "slug" : "access-mock-course",
+  "students" : [ ],
+  "information" : {
+    "de" : {
+      "title" : "ACCESS Demo-Kurs",
+      "language" : "de",
+      "description" : "Dieser Kurs demonstriert, wie man ACCESS-Kurse, -Übungen und -Aufgaben definiert.",
+      "university" : "Universität Zürich",
+      "period" : "Frühlings-Semester 2023"
+    },
+    "en" : {
+      "title" : "ACCESS Mock Course",
+      "language" : "en",
+      "description" : "This course demonstrates how to define ACCESS courses, assignments and tasks.",
+      "university" : "University of Zurich",
+      "period" : "Spring Semester 2023"
+    }
+  },
+  "supervisors" : [ ],
+  "maxPoints" : 0.0,
+  "overrideStart" : "2023-01-01T13:00:00",
+  "overrideEnd" : "2028-01-01T13:00:00",
+  "assistants" : [ ],
+  "studentsCount" : 0
+}

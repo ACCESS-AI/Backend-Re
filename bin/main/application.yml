@@ -1,0 +1,33 @@
+server:
+  shutdown: graceful
+  port: 8081
+  servlet:
+    context-path: /api
+  error:
+    include-message: always
+
+spring:
+  jackson:
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/access}
+    username: ${POSTGRES_USER:admin}
+    password: ${POSTGRES_PASSWORD:admin}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${AUTH_SERVER_URL:http://localhost:8080}/realms/access
+
+logging:
+  level:
+    org.springframework:
+      web.filter.CommonsRequestLoggingFilter: debug
+    ch.uzh.ifi.access: debug
+    org.flywaydb: debug
+

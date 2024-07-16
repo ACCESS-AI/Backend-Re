@@ -1,0 +1,110 @@
+{
+  "userId" : "student@uzh.ch",
+  "information" : {
+    "de" : {
+      "language" : "de",
+      "title" : "ACCESS Demo-Kurs",
+      "repository" : "Dieser Kurs demonstriert, wie man ACCESS-Kurse, -Übungen und -Aufgaben definiert.",
+      "description" : "Universität Zürich",
+      "university" : "Frühlings-Semester 2023",
+      "period" : null
+    },
+    "en" : {
+      "language" : "en",
+      "title" : "ACCESS Mock Course",
+      "repository" : "This course demonstrates how to define ACCESS courses, assignments and tasks.",
+      "description" : "University of Zurich",
+      "university" : "Spring Semester 2023",
+      "period" : null
+    }
+  },
+  "assignments" : [ {
+    "slug" : "hello",
+    "information" : {
+      "en" : {
+        "language" : "en",
+        "title" : "Hello, World!"
+      }
+    },
+    "tasks" : [ {
+      "userId" : "student@uzh.ch",
+      "slug" : "hello-world",
+      "bestScore" : 0.0,
+      "maxPoints" : 1.0,
+      "remainingAttempts" : 2,
+      "maxAttempts" : 2,
+      "information" : {
+        "en" : {
+          "language" : "en",
+          "title" : "Hello, World!",
+          "instructionsFile" : "instructions_en.md"
+        }
+      }
+    } ]
+  }, {
+    "slug" : "basics",
+    "information" : {
+      "en" : {
+        "language" : "en",
+        "title" : "Basics"
+      }
+    },
+    "tasks" : [ {
+      "userId" : "student@uzh.ch",
+      "slug" : "variable-assignment",
+      "bestScore" : 0.0,
+      "maxPoints" : 2.0,
+      "remainingAttempts" : 3,
+      "maxAttempts" : 3,
+      "information" : {
+        "en" : {
+          "language" : "en",
+          "title" : "Variable assignment",
+          "instructionsFile" : "instructions_en.md"
+        }
+      }
+    }, {
+      "userId" : "student@uzh.ch",
+      "slug" : "friendly-pairs",
+      "bestScore" : 0.0,
+      "maxPoints" : 2.0,
+      "remainingAttempts" : 2,
+      "maxAttempts" : 2,
+      "information" : {
+        "en" : {
+          "language" : "en",
+          "title" : "Identifying friendly pairs",
+          "instructionsFile" : "instructions_en.md"
+        }
+      }
+    }, {
+      "userId" : "student@uzh.ch",
+      "slug" : "arithmetic-expression",
+      "bestScore" : 0.0,
+      "maxPoints" : 1.0,
+      "remainingAttempts" : 2,
+      "maxAttempts" : 2,
+      "information" : {
+        "en" : {
+          "language" : "en",
+          "title" : "Arithmetic expression",
+          "instructionsFile" : "instructions_en.md"
+        }
+      }
+    }, {
+      "userId" : "student@uzh.ch",
+      "slug" : "presistent-results",
+      "bestScore" : 0.0,
+      "maxPoints" : 1.0,
+      "remainingAttempts" : 2,
+      "maxAttempts" : 2,
+      "information" : {
+        "en" : {
+          "language" : "en",
+          "title" : "Persistent Results",
+          "instructionsFile" : "instructions_en.md"
+        }
+      }
+    } ]
+  } ]
+}
